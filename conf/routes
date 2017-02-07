@@ -1,0 +1,13 @@
+# Routes
+# This file defines all application routes (Higher priority routes first)
+# ~~~~
+
+# Home page
+GET     /                       controllers.ContactController.listContacts()
+POST    /:id                    controllers.ContactController.retrieve(id:Int)
+POST    /                       controllers.ContactController.create()
+PUT     /                       controllers.ContactController.update()
+DELETE  /:id                    controllers.ContactController.delete(id:Int)
+GET     /assets/*file           controllers.Assets.at(path="/public", file)
+
+    
